@@ -14,6 +14,10 @@ import SwiftUI
 
 struct Ticket: View {
     
+    @State var title = "Sherlok"
+    @State var subtitle = "Sherlok"
+    @State var top = "sherlok-top"
+    
     var gradient = [Color("cyan"), Color("cyan").opacity(0), Color("cyan").opacity(0)]
     
     var body: some View {
@@ -21,28 +25,28 @@ struct Ticket: View {
         VStack(spacing: 0) {
             VStack(spacing: 4) {
                 
-                Text("Sherlok")
+                Text(title)
                     .font(.system(size: 20, weight: .semibold, design: .rounded))
                 
-                Text("Sherlok")
+                Text(subtitle)
                     .font(.system(size: 20, weight: .regular, design: .rounded))
             }
             .padding(EdgeInsets(top: 20, leading: 30, bottom: 0, trailing: 30))
             .frame(width: 250, height: 325, alignment: .top)
             .foregroundColor(.white)
             .background(
-            Image("sherlok-top")
+            Image(top)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
             )
             .mask (
-                Image("sherlok-top")
+                Image(top)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
             )
             .overlay {
-                RoundedRectangle(cornerRadius: 10)
-                    .stroke(LinearGradient(colors: <#T##[Color]#>, startPoint: <#T##UnitPoint#>, endPoint: <#T##UnitPoint#>))
+                RoundedRectangle(cornerRadius: 40)
+                    .stroke(LinearGradient(colors: gradient, startPoint: .topLeading, endPoint: .bottomTrailing))
             }
         }
         .frame(width: 460)
