@@ -102,8 +102,11 @@ struct Ticket: View {
                 
                 Image("code")
                     .resizable()
-                    .frame(width: 210, height: 60)
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 150, height: 40)
             }
+            .frame(width: 250, height: 135, alignment: .top)
+            .background(.ultraThinMaterial)
         }
         .frame(width: 460)
         .font(.footnote)
