@@ -18,7 +18,7 @@ struct Ticket: View {
     @State var subtitle = "Sherlok"
     @State var top = "sherlok-top"
     
-    var gradient = [Color("cyan"), Color("cyan").opacity(0), Color("cyan").opacity(0)]
+    var gradient = [Color("some"), Color("some").opacity(0), Color("some").opacity(0)]
     
     var body: some View {
         
@@ -46,10 +46,11 @@ struct Ticket: View {
             )
             .overlay {
                 RoundedRectangle(cornerRadius: 40)
-                    .stroke(LinearGradient(colors: gradient, startPoint: .topLeading, endPoint: .bottomTrailing))
+                    .stroke(LinearGradient(colors: gradient, startPoint: .topLeading, endPoint: .bottomTrailing), style: StrokeStyle(lineWidth: 2))
             }
         }
         .frame(width: 460)
+        .font(.footnote)
         .shadow(radius: 10)
     }
 }
