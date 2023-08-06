@@ -22,3 +22,18 @@ struct RoundedCorner: Shape {
         return Path(path.cgPath)
     }
 }
+
+extension View {
+    
+    func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
+        clipShape( RoundedCorner(radius: radius, corners: corners))
+    }
+    
+    func glow(color: Color = .red, radius: CGFloat = 20) -> some View {
+        self
+        
+            .shadow(color: color, radius: radius / 3)
+            .shadow(color: color, radius: radius / 3)
+            .shadow(color: color, radius: radius / 3)
+    }
+}
