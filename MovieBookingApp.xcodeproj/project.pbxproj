@@ -52,6 +52,10 @@
 		E467CD682A7F6C3400288EEC /* MovieBookingApp */ = {
 			isa = PBXGroup;
 			children = (
+				E467CD782A7F6DCE00288EEC /* Ui */,
+				E467CD7A2A7F6DE100288EEC /* Data */,
+				E467CD7B2A7F6DFD00288EEC /* Buttons */,
+				E467CD7C2A7F6E0F00288EEC /* Views */,
 				E467CD692A7F6C3400288EEC /* MovieBookingAppApp.swift */,
 				E467CD6B2A7F6C3400288EEC /* ContentView.swift */,
 				E467CD6D2A7F6C3500288EEC /* Assets.xcassets */,
@@ -67,6 +71,34 @@
 				E467CD712A7F6C3500288EEC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E467CD782A7F6DCE00288EEC /* Ui */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Ui;
+			sourceTree = "<group>";
+		};
+		E467CD7A2A7F6DE100288EEC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E467CD7B2A7F6DFD00288EEC /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		E467CD7C2A7F6E0F00288EEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
