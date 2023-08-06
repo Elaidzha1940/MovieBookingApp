@@ -12,9 +12,28 @@
 import SwiftUI
 
 struct TicketView: View {
+    
+    @State var animate = false
+    
+    
     var body: some View {
         
         ZStack{
+            
+            Circle()
+                .background(Color("blur"))
+                .blur(radius: animate ? 30 : 110)
+                .offset(x: animate ? -50 : -130, y: animate ? -30 : -100)
+                .task {
+                    withAnimation(.easeInOut(duration: 7).repeatForever()) {
+                        animate.toggle()
+                    }
+                }
+            
+            Circle()
+                .background(Color("blur1"))
+                .blur(radius: animate ? 30 : 110)
+                .offset(x: animate ? 100 : 130, y: animate ? 150 : 100)
             
             VStack(spacing: 30) {
                 
@@ -27,7 +46,7 @@ struct TicketView: View {
                     .font(.system(size: 16, weight: .semibold, design: .rounded))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-
+                
             }
             .padding(.horizontal, 20)
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
