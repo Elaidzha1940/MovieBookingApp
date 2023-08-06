@@ -48,6 +48,11 @@ struct Ticket: View {
                 RoundedRectangle(cornerRadius: 40)
                     .stroke(LinearGradient(colors: gradient, startPoint: .topLeading, endPoint: .bottomTrailing), style: StrokeStyle(lineWidth: 2))
             }
+            .cornerRadius(30, corners: [.topLeft, .topRight])
+            
+            VStack(spacing: 10) {
+                
+            }
         }
         .frame(width: 460)
         .font(.footnote)
