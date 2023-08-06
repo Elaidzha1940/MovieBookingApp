@@ -15,10 +15,19 @@ struct TicketView: View {
     var body: some View {
         
         ZStack{
+            
             VStack(spacing: 30) {
+                
                 Text("Mobile Ticket")
                     .font(.system(size: 20, weight: .semibold, design: .rounded))
                     .foregroundColor(.white)
+                
+                Text("Once you buy a movie ticket simply scan the barcode to acces to your movie.")
+                    .frame(maxWidth: 250)
+                    .font(.system(size: 16, weight: .semibold, design: .rounded))
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+
             }
             .padding(.horizontal, 20)
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
