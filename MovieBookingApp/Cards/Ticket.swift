@@ -24,15 +24,16 @@ struct Ticket: View {
                 Text("Movie1")
                     .font(.system(size: 20, weight: .regular, design: .rounded))
             }
-            .padding(EdgeInsets(top: 20, leading: 30, bottom: 0, trailing: 20))
-            .frame(width: 250, height: 330, alignment: .top)
+            .padding(EdgeInsets(top: 20, leading: 30, bottom: 0, trailing: 30))
+            .frame(width: 250, height: 325, alignment: .top)
             .foregroundColor(.white)
             .background(
             Image("sherlok")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
             )
         }
         .frame(width: 460)
-        .font(.footnote)
         .shadow(radius: 10)
     }
 }
