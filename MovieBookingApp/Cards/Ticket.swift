@@ -51,7 +51,58 @@ struct Ticket: View {
             .cornerRadius(30, corners: [.topLeft, .topRight])
             
             VStack(spacing: 10) {
+                Line()
+                    .stroke(style: StrokeStyle(lineWidth: 2, dash: [7]))
+                    .frame(width: 200, height: 1)
+                    .opacity(0.6)
                 
+                HStack(spacing: 20) {
+                    HStack(spacing: 4) {
+                        
+                        Text("Date:")
+                            .font(.system(size: 20, weight: .medium, design: .rounded))
+                            .foregroundColor(Color("some"))
+                        
+                        Text("August 6")
+                            .foregroundColor(.black)
+                    }
+                    
+                    HStack(spacing: 4) {
+                        
+                        Text("Time:")
+                            .font(.system(size: 20, weight: .medium, design: .rounded))
+                            .foregroundColor(Color("some"))
+                        
+                        Text("August 3 p.m.")
+                            .foregroundColor(.black)
+                    }
+                }
+                
+                HStack(spacing: 20) {
+                    HStack(spacing: 4) {
+                        
+                        Text("Row:")
+                            .font(.system(size: 20, weight: .medium, design: .rounded))
+                            .foregroundColor(Color("some"))
+                        
+                        Text("2")
+                            .foregroundColor(.black)
+                    }
+                    
+                    HStack(spacing: 4) {
+                        
+                        Text("Seats:")
+                            .font(.system(size: 20, weight: .medium, design: .rounded))
+                            .foregroundColor(Color("some"))
+                        
+                        Text("7, 8")
+                            .foregroundColor(.black)
+                    }
+                }
+                
+                Image("code")
+                    .resizable()
+                    .frame(width: 210, height: 60)
             }
         }
         .frame(width: 460)
