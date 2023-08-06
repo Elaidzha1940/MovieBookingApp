@@ -13,6 +13,7 @@
 		E467CD722A7F6C3500288EEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E467CD712A7F6C3500288EEC /* Preview Assets.xcassets */; };
 		E467CD7E2A7F6E4A00288EEC /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E467CD7D2A7F6E4A00288EEC /* TicketView.swift */; };
 		E467CD822A7F76AC00288EEC /* TicketData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E467CD812A7F76AC00288EEC /* TicketData.swift */; };
+		E467CD852A7F77D800288EEC /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = E467CD842A7F77D800288EEC /* Ticket.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E467CD712A7F6C3500288EEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E467CD7D2A7F6E4A00288EEC /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
 		E467CD812A7F76AC00288EEC /* TicketData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketData.swift; sourceTree = "<group>"; };
+		E467CD842A7F77D800288EEC /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		E467CD682A7F6C3400288EEC /* MovieBookingApp */ = {
 			isa = PBXGroup;
 			children = (
+				E467CD832A7F77C900288EEC /* Cards */,
 				E467CD782A7F6DCE00288EEC /* Ui */,
 				E467CD7A2A7F6DE100288EEC /* Data */,
 				E467CD7B2A7F6DFD00288EEC /* Buttons */,
@@ -105,6 +108,14 @@
 				E467CD7D2A7F6E4A00288EEC /* TicketView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E467CD832A7F77C900288EEC /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				E467CD842A7F77D800288EEC /* Ticket.swift */,
+			);
+			path = Cards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +190,7 @@
 			files = (
 				E467CD7E2A7F6E4A00288EEC /* TicketView.swift in Sources */,
 				E467CD822A7F76AC00288EEC /* TicketData.swift in Sources */,
+				E467CD852A7F77D800288EEC /* Ticket.swift in Sources */,
 				E467CD6C2A7F6C3400288EEC /* ContentView.swift in Sources */,
 				E467CD6A2A7F6C3400288EEC /* MovieBookingAppApp.swift in Sources */,
 			);

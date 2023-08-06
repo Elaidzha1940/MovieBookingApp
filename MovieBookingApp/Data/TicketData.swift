@@ -23,7 +23,7 @@ struct TicketModel: Identifiable {
 
 var tickets: [TicketModel] = [
     
-    TicketModel(image: "", title: "", subtitle: "", top: "", bottom: "")
-    TicketModel(image: "", title: "", subtitle: "", top: "", bottom: "")
-    TicketModel(image: "", title: "", subtitle: "", top: "", bottom: "")
+    TicketModel(image: "", title: "", subtitle: "", top: "", bottom: ""),
+    TicketModel(image: "", title: "", subtitle: "", top: "", bottom: ""),
+    TicketModel(image: "", title: "", subtitle: "", top: "", bottom: ""),
 ]
