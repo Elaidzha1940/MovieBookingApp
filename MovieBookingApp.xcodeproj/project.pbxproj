@@ -11,6 +11,7 @@
 		E467CD6C2A7F6C3400288EEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E467CD6B2A7F6C3400288EEC /* ContentView.swift */; };
 		E467CD6E2A7F6C3500288EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E467CD6D2A7F6C3500288EEC /* Assets.xcassets */; };
 		E467CD722A7F6C3500288EEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E467CD712A7F6C3500288EEC /* Preview Assets.xcassets */; };
+		E467CD7E2A7F6E4A00288EEC /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E467CD7D2A7F6E4A00288EEC /* TicketView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		E467CD6D2A7F6C3500288EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E467CD6F2A7F6C3500288EEC /* MovieBookingApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MovieBookingApp.entitlements; sourceTree = "<group>"; };
 		E467CD712A7F6C3500288EEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E467CD7D2A7F6E4A00288EEC /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		E467CD7C2A7F6E0F00288EEC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E467CD7D2A7F6E4A00288EEC /* TicketView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E467CD7E2A7F6E4A00288EEC /* TicketView.swift in Sources */,
 				E467CD6C2A7F6C3400288EEC /* ContentView.swift in Sources */,
 				E467CD6A2A7F6C3400288EEC /* MovieBookingAppApp.swift in Sources */,
 			);
