@@ -15,12 +15,31 @@ struct ContentView: View {
     
     @State var currentTab: Tab = .home
     
+    init() {
+        UITabBar.appearance().isHidden = true
+    }
+    
     var body: some View {
         
-        VStack {
+        VStack(spacing: 0) {
             
             TabView(selection: $currentTab) {
                 
+                Text("Home")
+                    .tag(Tab.home)
+                
+                Text("Location")
+                    .tag(Tab.location)
+
+                TicketView()
+                    .tag(Tab.ticket)
+                
+                Text("Category")
+                    .tag(Tab.categoty)
+
+                Text("Profile")
+                    .tag(Tab.profile)
+
             }
         }
     }

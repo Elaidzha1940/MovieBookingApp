@@ -15,8 +15,8 @@ enum Tab: String, CaseIterable {
     
     case home = "home.fill"
     case location = "home"
-    case ticket = "home"
-    case categoty = "home"
-    case profile = "home"
+    case ticket = "home.f"
+    case categoty = "home.d"
+    case profile = "home.c"
 }
 
