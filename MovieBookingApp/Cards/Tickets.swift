@@ -44,6 +44,9 @@ struct InfiniteStackView: View {
     @Binding var tickets: [TicketModel]
     var ticket: TicketModel
     
+    @GestureState var isDragging: Bool = false
+    @State var offset: CGFloat = .zero
+    
     @State var height: CGFloat = 0
     
     var body: some View {
@@ -53,6 +56,12 @@ struct InfiniteStackView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .zIndex(Double(CGFloat(tickets.count) - getIndex()))
+        .gesture(
+        DragGesture()
+            .updating($isDragging, body: {
+                 
+            })
+        )
     }
     
     func getIndex() -> CGFloat {
