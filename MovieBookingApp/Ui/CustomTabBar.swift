@@ -17,7 +17,7 @@ struct CustomTabBar: View {
     
     var backgroundColors = [Color("some"), Color("blur"), Color("blur1")]
     
-    var gradientCircle = [Color("some"), Color("some").opacity(0.1), Color("some")]
+    var gradientCircle = [Color("back"), Color("back").opacity(0.1), Color("back")]
     
     var body: some View {
         
@@ -33,7 +33,7 @@ struct CustomTabBar: View {
                             .renderingMode(.template)
                             .frame(maxWidth: .infinity)
                             .foregroundColor(.white)
-                            .offset(y: currentTab == tab ? -15 : 0)
+                            .offset(y: currentTab == tab ? -17 : 0)
                            
                     }
                 }
@@ -51,14 +51,29 @@ struct CustomTabBar: View {
                             LinearGradient(colors: gradientCircle, startPoint: .top, endPoint: .bottom), style: StrokeStyle(lineWidth: 2)
                         )
                         .rotationEffect(.degrees(135))
-                        .frame(width: 80, height: 80)
+                        .frame(width: 78, height: 78)
                     )
             }
         }
-        .frame(height: 25)
+        .frame(height: 24)
         .padding(.top, 30)
         .background(.ultraThinMaterial)
         .background(LinearGradient(colors: backgroundColors, startPoint: .leading, endPoint: .trailing))
+    }
+    
+    func getIndex() -> Int {
+        switch currentTab {
+        case .home:
+            return 0
+        case .location:
+            return 1
+        case .ticket:
+            return 2
+        case .categoty:
+            return 3
+        case .profile:
+            return 4
+        }
     }
 }
 
