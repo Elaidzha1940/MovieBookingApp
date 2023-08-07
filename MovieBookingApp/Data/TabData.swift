@@ -13,8 +13,8 @@ import Foundation
 
 enum Tab: String, CaseIterable {
     
-    case home = "home.fill"
-    case location = "home"
+    case home = "home"
+    case location = "home.s"
     case ticket = "home.f"
     case categoty = "home.d"
     case profile = "home.c"

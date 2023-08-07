@@ -12,13 +12,26 @@
 import SwiftUI
 
 struct CustomTabBar: View {
+    
+    @Binding var currentTab: Tab
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        HStack(spacing: 0) {
+            ForEach(Tab.allCases, id: \.rawValue) { tab in
+                Image(tab.rawValue)
+                    .renderingMode(.template)
+                    .frame(maxWidth: .infinity)
+                    .foregroundColor(.white)
+            }
+        }
+        .frame(maxWidth: .infinity)
+        .background(.red)
     }
 }
 
 struct CustomTabBar_Previews: PreviewProvider {
     static var previews: some View {
-        CustomTabBar()
+        ContentView()
     }
 }
