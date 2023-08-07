@@ -18,6 +18,7 @@
 		E467CD852A7F77D800288EEC /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = E467CD842A7F77D800288EEC /* Ticket.swift */; };
 		E4A4F1162A80F8FE006D3919 /* TabData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4F1152A80F8FE006D3919 /* TabData.swift */; };
 		E4A4F1182A80FBF4006D3919 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4F1172A80FBF4006D3919 /* CustomTabBar.swift */; };
+		E4A4F11A2A811EA5006D3919 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4F1192A811EA5006D3919 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		E467CD842A7F77D800288EEC /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 		E4A4F1152A80F8FE006D3919 /* TabData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabData.swift; sourceTree = "<group>"; };
 		E4A4F1172A80FBF4006D3919 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		E4A4F1192A811EA5006D3919 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				E467CD7D2A7F6E4A00288EEC /* TicketView.swift */,
+				E4A4F1192A811EA5006D3919 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				E467CD7E2A7F6E4A00288EEC /* TicketView.swift in Sources */,
 				E4A4F1162A80F8FE006D3919 /* TabData.swift in Sources */,
 				E467CD822A7F76AC00288EEC /* TicketData.swift in Sources */,
+				E4A4F11A2A811EA5006D3919 /* HomeView.swift in Sources */,
 				E467CD852A7F77D800288EEC /* Ticket.swift in Sources */,
 				E4A4F1182A80FBF4006D3919 /* CustomTabBar.swift in Sources */,
 				E467CD6C2A7F6C3400288EEC /* ContentView.swift in Sources */,
