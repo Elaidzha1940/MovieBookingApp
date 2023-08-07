@@ -56,15 +56,20 @@ struct InfiniteStackView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .zIndex(Double(CGFloat(tickets.count) - getIndex()))
+        .rotationEffect(getIndex() == 1 ? .degrees(-6) : .degrees(0))
+        .rotationEffect(getIndex() == 2 ? .degrees(6) : .degrees(0))
+        .scaleEffect(getIndex() == 0 ? 1 : 0.9)
+        .offset(x: getIndex() == 1 ? -40 : 0)
+        .offset(x: getIndex() == 2 ? 40 : 0)
         .offset(x: offset)
         .gesture(
         DragGesture()
-            .updating($isDragging, body: {_, uot, _ in
+            .updating($isDragging, body: {_, out, _ in
                   out = true
             })
             .onChanged({ value in
                 var translation = value.translation.width
-                translation = ticket.first?.id == ticket.id ? translation : 0
+                translation = tickets.first? .id == ticket.id ? translation : 0
                 translation = isDragging ? translation : 0
                 
                 withAnimation(.easeInOut(duration: 0.3)) {
