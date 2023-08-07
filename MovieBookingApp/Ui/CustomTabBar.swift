@@ -21,7 +21,10 @@ struct CustomTabBar: View {
     
     var body: some View {
         
-        VStack {
+        GeometryReader { geometry in
+            
+            let width = geometry.size.width
+            
             HStack(spacing: 0) {
                 ForEach(Tab.allCases, id: \.rawValue) { tab in
                     Button  {
@@ -44,6 +47,7 @@ struct CustomTabBar: View {
                     .fill(.ultraThinMaterial)
                     .frame(width: 80, height: 80)
                     .shadow(color: .black.opacity(0.25), radius: 20, x: 0, y: 0)
+                    .offset(x: indicatorOffset(width: width), y: -17)
                     .overlay(
                     Circle()
                         .trim(from: 0, to: CGFloat(0.5))
@@ -52,6 +56,7 @@ struct CustomTabBar: View {
                         )
                         .rotationEffect(.degrees(135))
                         .frame(width: 78, height: 78)
+                        .offset(x: indicatorOffset(width: width), y: -17)
                     )
             }
         }
@@ -59,6 +64,15 @@ struct CustomTabBar: View {
         .padding(.top, 30)
         .background(.ultraThinMaterial)
         .background(LinearGradient(colors: backgroundColors, startPoint: .leading, endPoint: .trailing))
+    }
+    
+    func indicatorOffset(width: CGFloat) -> CGFloat {
+        let index = CGFloat(getIndex())
+        if index == 0 { return 0 }
+        
+        let buttonWidth = width / CGFloat(Tab.allCases.count)
+        
+        return index * buttonWidth
     }
     
     func getIndex() -> Int {
