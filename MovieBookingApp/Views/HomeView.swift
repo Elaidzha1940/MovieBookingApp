@@ -41,6 +41,12 @@ struct HomeView: View {
                 
                 CustomSearchBar()
                     .padding(EdgeInsets(top: 30, leading: 20, bottom: 20, trailing: 20))
+                
+                ScrollView(.vertical, showsIndicators: false) {
+                    VStack {
+                        
+                    }
+                }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         }

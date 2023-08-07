@@ -20,6 +20,7 @@
 		E4A4F1182A80FBF4006D3919 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4F1172A80FBF4006D3919 /* CustomTabBar.swift */; };
 		E4A4F11A2A811EA5006D3919 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4F1192A811EA5006D3919 /* HomeView.swift */; };
 		E4A4F11C2A81209F006D3919 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4F11B2A81209F006D3919 /* CustomSearchBar.swift */; };
+		E4A4F11E2A812343006D3919 /* ScrollSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4F11D2A812343006D3919 /* ScrollSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		E4A4F1172A80FBF4006D3919 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		E4A4F1192A811EA5006D3919 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E4A4F11B2A81209F006D3919 /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
+		E4A4F11D2A812343006D3919 /* ScrollSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				E4A4F1172A80FBF4006D3919 /* CustomTabBar.swift */,
 				E4A4F11B2A81209F006D3919 /* CustomSearchBar.swift */,
+				E4A4F11D2A812343006D3919 /* ScrollSection.swift */,
 			);
 			path = Ui;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			files = (
 				E467CD7E2A7F6E4A00288EEC /* TicketView.swift in Sources */,
 				E4A4F1162A80F8FE006D3919 /* TabData.swift in Sources */,
+				E4A4F11E2A812343006D3919 /* ScrollSection.swift in Sources */,
 				E467CD822A7F76AC00288EEC /* TicketData.swift in Sources */,
 				E4A4F11A2A811EA5006D3919 /* HomeView.swift in Sources */,
 				E467CD852A7F77D800288EEC /* Ticket.swift in Sources */,
