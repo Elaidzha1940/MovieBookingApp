@@ -55,7 +55,7 @@ struct InfiniteStackView: View {
             Ticket(title: ticket.title, subtitle: ticket.subtitle, top: ticket.top, bottom: ticket.bottom, height: $height)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .zIndex(Double(CGFloat(tickets.count) - getIndex()))
+        .zIndex( getIndex() == 0 && offset > 100 ? Double(CGFloat(tickets.count) - getIndex()) - 1 : Double(CGFloat(tickets.count) - getIndex()))
         .rotationEffect(.init(degrees: getRotation(angle: 10)))
         .rotationEffect(getIndex() == 1 ? .degrees(-6) : .degrees(0))
         .rotationEffect(getIndex() == 2 ? .degrees(6) : .degrees(0))
@@ -75,6 +75,7 @@ struct InfiniteStackView: View {
                     
                     withAnimation(.easeInOut(duration: 0.3)) {
                         offset - translation
+                        
                     }
                 })
                 .onEnded({ value in
