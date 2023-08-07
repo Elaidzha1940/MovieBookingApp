@@ -14,9 +14,11 @@ import SwiftUI
 
 struct Ticket: View {
     
-    @State var title = "Sherlok"
-    @State var subtitle = "Sherlok"
-    @State var top = "sherlok-top"
+    @State var title = "Jhon4Wick"
+    @State var subtitle = "Chapter 4"
+    @State var top = "jhon-top"
+    @State var bottom = "jhon-bottom"
+    @Binding var height: CGFloat
     
     var gradient = [Color("some"), Color("some").opacity(0), Color("some").opacity(0)]
     
@@ -35,9 +37,9 @@ struct Ticket: View {
             .frame(width: 250, height: 325, alignment: .top)
             .foregroundColor(.white)
             .background(
-            Image(top)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
+                Image(top)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
             )
             .mask (
                 Image(top)
@@ -49,6 +51,8 @@ struct Ticket: View {
                     .stroke(LinearGradient(colors: gradient, startPoint: .topLeading, endPoint: .bottomTrailing), style: StrokeStyle(lineWidth: 2))
             }
             .cornerRadius(30, corners: [.topLeft, .topRight])
+            
+            Spacer(minLength: height)
             
             VStack(spacing: 10) {
                 Line()
@@ -103,10 +107,21 @@ struct Ticket: View {
                 Image("code")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(width: 150, height: 40)
+                    .frame(width: 150, height: 30)
+                    .padding(5)
             }
-            .frame(width: 250, height: 135, alignment: .top)
+            .frame(width: 270, height: 135, alignment: .top)
             .background(.ultraThinMaterial)
+            .background(
+                Image(bottom)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+            )
+            .mask(
+                Image(bottom)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+            )
         }
         .frame(width: 460)
         .font(.footnote)
@@ -116,6 +131,6 @@ struct Ticket: View {
 
 struct Ticket_Previews: PreviewProvider {
     static var previews: some View {
-        Ticket()
+        Ticket(height: .constant(0))
     }
 }

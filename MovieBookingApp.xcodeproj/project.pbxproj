@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E426B3AA2A7F83AC001B5CF8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E426B3A92A7F83AC001B5CF8 /* Utils.swift */; };
+		E426B3AE2A80B3A5001B5CF8 /* Tickets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E426B3AD2A80B3A5001B5CF8 /* Tickets.swift */; };
 		E467CD6A2A7F6C3400288EEC /* MovieBookingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E467CD692A7F6C3400288EEC /* MovieBookingAppApp.swift */; };
 		E467CD6C2A7F6C3400288EEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E467CD6B2A7F6C3400288EEC /* ContentView.swift */; };
 		E467CD6E2A7F6C3500288EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E467CD6D2A7F6C3500288EEC /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		E426B3A92A7F83AC001B5CF8 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		E426B3AD2A80B3A5001B5CF8 /* Tickets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tickets.swift; sourceTree = "<group>"; };
 		E467CD662A7F6C3400288EEC /* MovieBookingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieBookingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E467CD692A7F6C3400288EEC /* MovieBookingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBookingAppApp.swift; sourceTree = "<group>"; };
 		E467CD6B2A7F6C3400288EEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				E467CD842A7F77D800288EEC /* Ticket.swift */,
+				E426B3AD2A80B3A5001B5CF8 /* Tickets.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				E467CD6C2A7F6C3400288EEC /* ContentView.swift in Sources */,
 				E467CD6A2A7F6C3400288EEC /* MovieBookingAppApp.swift in Sources */,
 				E426B3AA2A7F83AC001B5CF8 /* Utils.swift in Sources */,
+				E426B3AE2A80B3A5001B5CF8 /* Tickets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

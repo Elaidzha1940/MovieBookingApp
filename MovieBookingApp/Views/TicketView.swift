@@ -15,10 +15,9 @@ struct TicketView: View {
     
     @State var animate = false
     
-    
     var body: some View {
         
-        ZStack{
+        ZStack {
             
             Circle()
                 .background(Color("blur"))
