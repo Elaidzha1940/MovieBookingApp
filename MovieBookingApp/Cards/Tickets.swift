@@ -78,8 +78,17 @@ struct InfiniteStackView: View {
                 }
             })
             .onEnded({ value in
+                let width = UIScreen.main.bounds.width
+                let swipedRight = offset > (width / 2)
+                
                 withAnimation(.easeInOut(duration: 0.5)) {
-                    offset = .zero
+                    if swipedRight {
+                        offset = width
+                        removeAndAdd()
+                    } else {
+                        offset = .zero
+                        
+                    }
                 }
             })
         )
@@ -99,5 +108,18 @@ struct InfiniteStackView: View {
         let progress = offset / width
         
         return Double(progress * angle)
+    }
+    
+    func removeAndAdd() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            var updatedTicket = ticket
+            updatedTicket.id = UUID().uuidString
+            
+            tickets.append(updatedTicket)
+            
+            withAnimation(.spring()) {
+                tickets.removeFirst()
+            }
+        }
     }
 }
