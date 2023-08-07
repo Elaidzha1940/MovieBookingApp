@@ -19,7 +19,7 @@ struct ScrollSection: View {
 
     var body: some View {
 
-        VStack {
+        VStack(alignment: .leading) {
             Text(title)
                 .font(.system(size: 20, weight: .semibold, design: .rounded))
                 .foregroundColor(.white)
