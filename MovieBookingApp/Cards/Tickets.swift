@@ -64,33 +64,38 @@ struct InfiniteStackView: View {
         .offset(x: getIndex() == 2 ? 40 : 0)
         .offset(x: offset)
         .gesture(
-        DragGesture()
-            .updating($isDragging, body: {_, out, _ in
-                  out = true
-            })
-            .onChanged({ value in
-                var translation = value.translation.width
-                translation = tickets.first? .id == ticket.id ? translation : 0
-                translation = isDragging ? translation : 0
-                
-                withAnimation(.easeInOut(duration: 0.3)) {
-                    offset - translation
-                }
-            })
-            .onEnded({ value in
-                let width = UIScreen.main.bounds.width
-                let swipedRight = offset > (width / 2)
-                
-                withAnimation(.easeInOut(duration: 0.5)) {
-                    if swipedRight {
-                        offset = width
-                        removeAndAdd()
-                    } else {
-                        offset = .zero
-                        
+            DragGesture()
+                .updating($isDragging, body: {_, out, _ in
+                    out = true
+                })
+                .onChanged({ value in
+                    var translation = value.translation.width
+                    translation = tickets.first? .id == ticket.id ? translation : 0
+                    translation = isDragging ? translation : 0
+                    
+                    withAnimation(.easeInOut(duration: 0.3)) {
+                        offset - translation
                     }
-                }
-            })
+                })
+                .onEnded({ value in
+                    let width = UIScreen.main.bounds.width
+                    let swipedRight = offset > (width / 2)
+                    let swipedLeft = -offset > (width / 2)
+                    
+                    withAnimation(.easeInOut(duration: 0.5)) {
+                        if swipedLeft {
+                            offset = -width
+                            removeTicket()
+                        } else {
+                            if swipedRight {
+                                offset = width
+                                removeAndAdd()
+                            } else {
+                                offset = .zero
+                            }
+                        }
+                    }
+                })
         )
     }
     
