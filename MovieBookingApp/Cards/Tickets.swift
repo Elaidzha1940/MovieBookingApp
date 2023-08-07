@@ -13,7 +13,7 @@ import SwiftUI
 
 struct Tickets: View {
     
-    @State  var tickets: [TicketModel] = [
+    @State var tickets: [TicketModel] = [
         
         TicketModel(image: "jhon", title: "Jhon4Wick", subtitle: "Chapter 4", top: "jhon-top", bottom: "jhon-bottom"),
         TicketModel(image: "oppenheimer", title: "Oppenheimer", subtitle: "A Film by Christopher Nolan", top: "oppenheimer-top", bottom: "oppenheimer-bottom"),
@@ -74,7 +74,7 @@ struct InfiniteStackView: View {
                     translation = isDragging ? translation : 0
                     
                     withAnimation(.easeInOut(duration: 0.3)) {
-                        offset - translation
+                        offset = translation
                         height = -offset / 5
                     }
                 })

@@ -12,10 +12,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var currentTab: Tab = .home
+    
     var body: some View {
         
         VStack {
             
+            TabView(selection: $currentTab) {
+                
+            }
         }
     }
 }

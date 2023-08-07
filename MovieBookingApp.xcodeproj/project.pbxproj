@@ -16,6 +16,7 @@
 		E467CD7E2A7F6E4A00288EEC /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E467CD7D2A7F6E4A00288EEC /* TicketView.swift */; };
 		E467CD822A7F76AC00288EEC /* TicketData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E467CD812A7F76AC00288EEC /* TicketData.swift */; };
 		E467CD852A7F77D800288EEC /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = E467CD842A7F77D800288EEC /* Ticket.swift */; };
+		E4A4F1162A80F8FE006D3919 /* TabData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4F1152A80F8FE006D3919 /* TabData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E467CD7D2A7F6E4A00288EEC /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
 		E467CD812A7F76AC00288EEC /* TicketData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketData.swift; sourceTree = "<group>"; };
 		E467CD842A7F77D800288EEC /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		E4A4F1152A80F8FE006D3919 /* TabData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				E467CD812A7F76AC00288EEC /* TicketData.swift */,
+				E4A4F1152A80F8FE006D3919 /* TabData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E467CD7E2A7F6E4A00288EEC /* TicketView.swift in Sources */,
+				E4A4F1162A80F8FE006D3919 /* TabData.swift in Sources */,
 				E467CD822A7F76AC00288EEC /* TicketData.swift in Sources */,
 				E467CD852A7F77D800288EEC /* Ticket.swift in Sources */,
 				E467CD6C2A7F6C3400288EEC /* ContentView.swift in Sources */,
