@@ -14,24 +14,26 @@ import SwiftUI
 
 struct Ticket: View {
     
+    @State var image = "jhon"
     @State var title = "Jhon4Wick"
     @State var subtitle = "Chapter 4"
-    @State var top = "jhon-top"
+    @State var top = "jhon"
     @State var bottom = "jhon-bottom"
+    
     @Binding var height: CGFloat
     
     var gradient = [Color("some"), Color("some").opacity(0), Color("some").opacity(0)]
     
     var body: some View {
         
-        VStack(spacing: 0) {
-            VStack(spacing: 4) {
+        VStack(spacing: 0.0) {
+            VStack(spacing: 4.0) {
                 
                 Text(title)
                     .font(.system(size: 20, weight: .semibold, design: .rounded))
                 
                 Text(subtitle)
-                    .font(.system(size: 20, weight: .regular, design: .rounded))
+                    .font(.system(size: 15, weight: .regular, design: .rounded))
             }
             .padding(EdgeInsets(top: 20, leading: 30, bottom: 0, trailing: 30))
             .frame(width: 250, height: 325, alignment: .top)
@@ -41,7 +43,7 @@ struct Ticket: View {
                     .resizable()
                     .aspectRatio(contentMode: .fill)
             )
-            .mask (
+            .mask(
                 Image(top)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
@@ -62,21 +64,17 @@ struct Ticket: View {
                 
                 HStack(spacing: 20) {
                     HStack(spacing: 4) {
-                        
                         Text("Date:")
                             .font(.system(size: 20, weight: .medium, design: .rounded))
                             .foregroundColor(Color("some"))
-                        
                         Text("August 6")
                             .foregroundColor(.black)
                     }
                     
                     HStack(spacing: 4) {
-                        
                         Text("Time:")
                             .font(.system(size: 20, weight: .medium, design: .rounded))
                             .foregroundColor(Color("some"))
-                        
                         Text("August 3 p.m.")
                             .foregroundColor(.black)
                     }
@@ -84,31 +82,24 @@ struct Ticket: View {
                 
                 HStack(spacing: 20) {
                     HStack(spacing: 4) {
-                        
                         Text("Row:")
                             .font(.system(size: 20, weight: .medium, design: .rounded))
                             .foregroundColor(Color("some"))
-                        
                         Text("2")
                             .foregroundColor(.black)
                     }
                     
                     HStack(spacing: 4) {
-                        
                         Text("Seats:")
                             .font(.system(size: 20, weight: .medium, design: .rounded))
                             .foregroundColor(Color("some"))
-                        
                         Text("7, 8")
                             .foregroundColor(.black)
                     }
                 }
                 
                 Image("code")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 150, height: 30)
-                    .padding(5)
+                    
             }
             .frame(width: 270, height: 135, alignment: .top)
             .background(.ultraThinMaterial)
@@ -124,7 +115,6 @@ struct Ticket: View {
             )
         }
         .frame(width: 460)
-        .font(.footnote)
         .shadow(radius: 10)
     }
 }

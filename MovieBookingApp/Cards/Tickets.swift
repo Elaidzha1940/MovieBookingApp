@@ -28,7 +28,7 @@ struct Tickets: View {
                 InfiniteStackView(tickets: $tickets, ticket: ticket)
             }
         }
-        .padding()
+        .padding(.top, 30)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
     }
 }
@@ -75,7 +75,7 @@ struct InfiniteStackView: View {
                     
                     withAnimation(.easeInOut(duration: 0.3)) {
                         offset - translation
-                        
+                        height = -offset / 5
                     }
                 })
                 .onEnded({ value in
@@ -93,6 +93,7 @@ struct InfiniteStackView: View {
                                 removeAndAdd()
                             } else {
                                 offset = .zero
+                                height = .zero
                             }
                         }
                     }
