@@ -14,9 +14,9 @@ import Foundation
 enum Tab: String, CaseIterable {
     
     case home = "home"
-    case location = "home.s"
-    case ticket = "home.f"
-    case categoty = "home.d"
-    case profile = "home.c"
+    case location = "location"
+    case ticket = "ticket"
+    case categoty = "categoty"
+    case profile = "profile"
 }
 
