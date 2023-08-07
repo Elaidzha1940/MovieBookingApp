@@ -21,6 +21,7 @@
 		E4A4F11A2A811EA5006D3919 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4F1192A811EA5006D3919 /* HomeView.swift */; };
 		E4A4F11C2A81209F006D3919 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4F11B2A81209F006D3919 /* CustomSearchBar.swift */; };
 		E4A4F11E2A812343006D3919 /* ScrollSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4F11D2A812343006D3919 /* ScrollSection.swift */; };
+		E4A4F1202A8124A5006D3919 /* PosterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4F11F2A8124A5006D3919 /* PosterData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		E4A4F1192A811EA5006D3919 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E4A4F11B2A81209F006D3919 /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
 		E4A4F11D2A812343006D3919 /* ScrollSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollSection.swift; sourceTree = "<group>"; };
+		E4A4F11F2A8124A5006D3919 /* PosterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			children = (
 				E467CD812A7F76AC00288EEC /* TicketData.swift */,
 				E4A4F1152A80F8FE006D3919 /* TabData.swift */,
+				E4A4F11F2A8124A5006D3919 /* PosterData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				E467CD6C2A7F6C3400288EEC /* ContentView.swift in Sources */,
 				E467CD6A2A7F6C3400288EEC /* MovieBookingAppApp.swift in Sources */,
 				E426B3AA2A7F83AC001B5CF8 /* Utils.swift in Sources */,
+				E4A4F1202A8124A5006D3919 /* PosterData.swift in Sources */,
 				E4A4F11C2A81209F006D3919 /* CustomSearchBar.swift in Sources */,
 				E426B3AE2A80B3A5001B5CF8 /* Tickets.swift in Sources */,
 			);

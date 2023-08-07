@@ -13,7 +13,19 @@ import SwiftUI
 
 struct ScrollSection: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+
+        VStack {
+            Text("Now Playing")
+                .font(.system(size: 20, weight: .semibold, design: .rounded))
+                .foregroundColor(.white)
+                .padding(.horizontal, 20)
+
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 20) {
+                    ForEach()
+                }
+            }
+        }
     }
 }
 
