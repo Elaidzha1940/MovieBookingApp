@@ -12,11 +12,29 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @State var animate = false
+
     var body: some View {
 
         ZStack {
-            VStack {
-                
+            
+            Circle()
+                .background(Color("blur"))
+                .blur(radius: animate ? 30 : 110)
+                .offset(x: animate ? -50 : -130, y: animate ? -30 : -100)
+                .task {
+                    withAnimation(.easeInOut(duration: 7).repeatForever()) {
+                        animate.toggle()
+                    }
+                }
+            
+            Circle()
+                .background(Color("blur1"))
+                .blur(radius: animate ? 30 : 110)
+                .offset(x: animate ? 100 : 130, y: animate ? 150 : 100)
+            
+            VStack(spacing: 0) {
                 Text("Choose Movie")
                     .font(.system(size: 25, weight: .bold, design: .rounded))
                     .foregroundColor(.white)
