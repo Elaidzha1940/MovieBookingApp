@@ -17,6 +17,7 @@
 		E467CD822A7F76AC00288EEC /* TicketData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E467CD812A7F76AC00288EEC /* TicketData.swift */; };
 		E467CD852A7F77D800288EEC /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = E467CD842A7F77D800288EEC /* Ticket.swift */; };
 		E4A4F1162A80F8FE006D3919 /* TabData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4F1152A80F8FE006D3919 /* TabData.swift */; };
+		E4A4F1182A80FBF4006D3919 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4F1172A80FBF4006D3919 /* CustomTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E467CD812A7F76AC00288EEC /* TicketData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketData.swift; sourceTree = "<group>"; };
 		E467CD842A7F77D800288EEC /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 		E4A4F1152A80F8FE006D3919 /* TabData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabData.swift; sourceTree = "<group>"; };
+		E4A4F1172A80FBF4006D3919 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		E467CD782A7F6DCE00288EEC /* Ui */ = {
 			isa = PBXGroup;
 			children = (
+				E4A4F1172A80FBF4006D3919 /* CustomTabBar.swift */,
 			);
 			path = Ui;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				E4A4F1162A80F8FE006D3919 /* TabData.swift in Sources */,
 				E467CD822A7F76AC00288EEC /* TicketData.swift in Sources */,
 				E467CD852A7F77D800288EEC /* Ticket.swift in Sources */,
+				E4A4F1182A80FBF4006D3919 /* CustomTabBar.swift in Sources */,
 				E467CD6C2A7F6C3400288EEC /* ContentView.swift in Sources */,
 				E467CD6A2A7F6C3400288EEC /* MovieBookingAppApp.swift in Sources */,
 				E426B3AA2A7F83AC001B5CF8 /* Utils.swift in Sources */,
