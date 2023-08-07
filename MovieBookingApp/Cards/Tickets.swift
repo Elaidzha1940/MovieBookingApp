@@ -56,6 +56,7 @@ struct InfiniteStackView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .zIndex(Double(CGFloat(tickets.count) - getIndex()))
+        .rotationEffect(.init(degrees: getRotation(angle: 10)))
         .rotationEffect(getIndex() == 1 ? .degrees(-6) : .degrees(0))
         .rotationEffect(getIndex() == 2 ? .degrees(6) : .degrees(0))
         .scaleEffect(getIndex() == 0 ? 1 : 0.9)
@@ -90,5 +91,13 @@ struct InfiniteStackView: View {
         } ?? 0
         
         return CGFloat(index)
+    }
+    
+    func getRotation(angle: Double) -> Double {
+        
+        let width = UIScreen.main.bounds.width
+        let progress = offset / width
+        
+        return Double(progress * angle)
     }
 }
