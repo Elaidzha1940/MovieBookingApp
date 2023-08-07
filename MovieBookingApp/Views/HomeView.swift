@@ -13,7 +13,19 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+
+        ZStack {
+            VStack {
+                
+                Text("Choose Movie")
+                    .font(.system(size: 25, weight: .bold, design: .rounded))
+                    .foregroundColor(.white)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        }
+        .background(
+            LinearGradient(colors: [Color("back"), Color("back1")], startPoint: .top, endPoint: .bottom)
+        )
     }
 }
 
