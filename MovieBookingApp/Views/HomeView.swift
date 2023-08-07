@@ -38,6 +38,9 @@ struct HomeView: View {
                 Text("Choose Movie")
                     .font(.system(size: 25, weight: .bold, design: .rounded))
                     .foregroundColor(.white)
+                
+                CustomSearchBar()
+                    .padding(EdgeInsets(top: 30, leading: 20, bottom: 20, trailing: 20))
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         }
