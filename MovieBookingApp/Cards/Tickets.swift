@@ -58,8 +58,15 @@ struct InfiniteStackView: View {
         .zIndex(Double(CGFloat(tickets.count) - getIndex()))
         .gesture(
         DragGesture()
-            .updating($isDragging, body: {
-                 
+            .updating($isDragging, body: {_, uot, _ in
+                  out = true
+            })
+            .onChanged({ value in
+                var translation = value.translation.width
+                translation = ticket.first?.id == ticket.id ? translation : 0
+                translation = isDragging ? translation : 0
+                
+                withAnimation(.easeInOut(duration: 0.3))
             })
         )
     }
