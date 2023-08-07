@@ -122,4 +122,10 @@ struct InfiniteStackView: View {
             }
         }
     }
+    
+    func removeTicket() {
+        withAnimation(.spring()) {
+            tickets.removeFirst()
+        }
+    }
 }
