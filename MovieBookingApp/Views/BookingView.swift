@@ -12,8 +12,33 @@
 import SwiftUI
 
 struct BookingView: View {
+    
+    @State var gradient = [Color("blur").opacity(0.6), Color("blur"), Color("back"), Color("blur")]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+
+        ZStack {
+            Image("booking")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(maxWidth: .infinity, alignment: .topTrailing)
+            
+            VStack {
+                LinearGradient(colors: gradient, startPoint: .topLeading, endPoint: .bottomLeading)
+                    .frame(height: 600)
+            }
+            .frame(maxWidth: .infinity, alignment: .bottomLeading)
+            
+            VStack(spacing: 0.0) {
+                
+                HStack {
+                    Cir
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .topLeading)
+        }
+        .background(Color("blur"))
+        .ignoresSafeArea()
     }
 }
 
