@@ -22,6 +22,7 @@
 		E4A4F11C2A81209F006D3919 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4F11B2A81209F006D3919 /* CustomSearchBar.swift */; };
 		E4A4F11E2A812343006D3919 /* ScrollSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4F11D2A812343006D3919 /* ScrollSection.swift */; };
 		E4A4F1202A8124A5006D3919 /* PosterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4F11F2A8124A5006D3919 /* PosterData.swift */; };
+		E4F546A72A82120E001A0035 /* BookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F546A62A82120E001A0035 /* BookingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		E4A4F11B2A81209F006D3919 /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
 		E4A4F11D2A812343006D3919 /* ScrollSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollSection.swift; sourceTree = "<group>"; };
 		E4A4F11F2A8124A5006D3919 /* PosterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterData.swift; sourceTree = "<group>"; };
+		E4F546A62A82120E001A0035 /* BookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			children = (
 				E467CD7D2A7F6E4A00288EEC /* TicketView.swift */,
 				E4A4F1192A811EA5006D3919 /* HomeView.swift */,
+				E4F546A62A82120E001A0035 /* BookingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				E467CD7E2A7F6E4A00288EEC /* TicketView.swift in Sources */,
 				E4A4F1162A80F8FE006D3919 /* TabData.swift in Sources */,
+				E4F546A72A82120E001A0035 /* BookingView.swift in Sources */,
 				E4A4F11E2A812343006D3919 /* ScrollSection.swift in Sources */,
 				E467CD822A7F76AC00288EEC /* TicketData.swift in Sources */,
 				E4A4F11A2A811EA5006D3919 /* HomeView.swift in Sources */,

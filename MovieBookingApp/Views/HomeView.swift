@@ -49,12 +49,14 @@ struct HomeView: View {
                     .padding(EdgeInsets(top: 30, leading: 20, bottom: 20, trailing: 20))
                 
                 ScrollView(.vertical, showsIndicators: false) {
-                    VStack {
+                    
+                    VStack(spacing: 20) {
                         ScrollSection(title: "Now Playing", posters: posters)
                         ScrollSection(title: "Coming soon", posters: posters1)
                         ScrollSection(title: "Top Movies", posters: posters2)
                         ScrollSection(title: "Favorite", posters: posters)
                     }
+                    .padding(.bottom, 90)
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)

@@ -21,29 +21,31 @@ struct ContentView: View {
     
     var body: some View {
         
-        VStack(spacing: 0) {
-            
-            TabView(selection: $currentTab) {
+        NavigationView {
+            VStack(spacing: 0) {
                 
-                Text("Home")
-                    .tag(Tab.home)
-                
-                Text("Location")
-                    .tag(Tab.location)
+                TabView(selection: $currentTab) {
+                    
+                    HomeView()
+                        .tag(Tab.home)
+                    
+                    Text("Location")
+                        .tag(Tab.location)
 
-                TicketView()
-                    .tag(Tab.ticket)
-                
-                Text("Category")
-                    .tag(Tab.categoty)
+                    TicketView()
+                        .tag(Tab.ticket)
+                    
+                    Text("Category")
+                        .tag(Tab.categoty)
 
-                Text("Profile")
-                    .tag(Tab.profile)
+                    Text("Profile")
+                        .tag(Tab.profile)
+                }
+                
+                CustomTabBar(currentTab: $currentTab)
             }
-            
-            CustomTabBar(currentTab: $currentTab)
+            .ignoresSafeArea(.keyboard)
         }
-        .ignoresSafeArea(.keyboard)
     }
 }
 
