@@ -32,7 +32,7 @@ struct BookingView: View {
             VStack(spacing: 0.0) {
                 
                 HStack {
-                    Cir
+                    
                 }
             }
             .frame(maxWidth: .infinity, alignment: .topLeading)
